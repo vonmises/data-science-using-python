@@ -7,7 +7,7 @@ number_of_oscars = [5, 11, 3, 8, 10]
 # so that each bar is centred.
 x = [i + 0.1 for i, _ in enumerate(movies)]
 
-# plot bars with left co-ordinates [xs], heights [number_of_oscars]
+# plot bars with left co-ordinates [x], heights [number_of_oscars]
 p.bar(x, number_of_oscars)
 
 p.ylabel("Number of Academy Awards")
