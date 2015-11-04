@@ -6,7 +6,7 @@ def decile(grade): return grade // 10 * 10
 histogram = Counter(decile(grade) for grade in grades)
 
 # shift each bar to the left by 4, give each bar its height, and a width of 8
-p.bar([x - 5 for x in histogram.keys()], histogram.values(), 10)
+p.bar([x - 4 for x in histogram.keys()], histogram.values(), 8)
 
 # x-axis from -5 to 105, y-axis from 0 to 5
 p.axis([-5, 105, 0, 5])
